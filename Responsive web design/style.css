@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: rgb(39, 39, 110);
+    color:white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    top:0;
+    position: fixed;
+    }
+    
+    .banner{
+        img{
+            width:100%;
+    }
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left:  10%;
+    margin-right: 10%;
+    padding:100px 0px;
+   
+    
+
+
+}
+.lists{
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    img{
+        width: 33%;
+        
+    }
+}
+.missing{
+    width: 33%;
+    background-color:rgb(190, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    height: 397px;
+}
+
+    .more{
+        margin:50px;
+        font-size:50px;
+}
+.more-puppies{
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+    
+    img{
+        width: 47%;
+    }
+
+}
+.footer{
+    background-color: rgb(39, 39, 110);
+    color:white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99px;
+    font-size: 40px;
+}
+
+@media(max-width: 576px){
+    body{
+        background-color: yellow;
+    }
+    .lists{
+        img{
+            width: 100%;
+
+        }
+
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+.missing{
+    font-size: 50px;
+    height: 350px;
+    width: 100%;
+}
+.more-puppies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+  
+    img{
+        width: 100%;
+
+    }
+
+}
+
+}
+
+@media(min-width:577px) and (max-width:768px){
+    body{
+        background-color:rgb(114, 183, 240);
+    }
+.lists{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    justify-content: space-between;
+    img{
+        width: 47%;
+        
+    
+    }
+}
+.missing{
+    display: none;
+    
+}
+.more-puppies{
+    img{
+        width: 47%;
+    }
+   
+}
+
+
+}
