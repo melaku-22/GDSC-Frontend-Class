@@ -1,0 +1,138 @@
+
+@font-face {
+    font-family: 'time';
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+body{
+    background-color:#1B244A;
+   
+}
+
+.container{
+    background-color: ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.home{
+    background-color:;
+    width: 40%;
+    text-align: center;
+
+    h1{
+        font-size:100px ;
+        color:#EEEEEE;
+
+    }
+
+    .counter1{
+        font-size:180px ;
+        color: #F94F6D;
+        font-family: time;
+        font-weight: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+
+    }
+    .counter-home{
+        background-color: black;
+        height: 30vh;
+        width: 50% ;
+        border-radius:10px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+        
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        width: 60%;
+        margin: auto;
+    }
+
+       
+
+    
+    .one ,.two,.three{
+        border:  solid white;
+        border-radius: 10px;
+        font-size: 45px;
+        padding: 25px;
+        margin-top: 20px;
+        color: white;
+        font-family: time;
+
+
+        
+    }
+    
+}
+
+.guest{
+    background-color:;
+    width: 40%;
+    text-align: center;
+
+    
+    h1{
+        font-size:100px ;
+        color:#EEEEEE;
+
+    }
+    .counter2{
+        
+        color: #F94F6D;
+        font-family: time;
+        font-size:180px;
+        font-weight: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .counter-guest{
+        background-color: black;
+        height: 30vh;
+        width: 50% ;
+        border-radius:10px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+        
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        width: 60%;
+        margin: auto;
+    }
+
+       
+
+    
+    .one ,.two,.three{
+        border:  solid white;
+        border-radius: 10px;
+        font-size: 45px;
+        padding: 25px;
+        margin-top: 20px;
+        color: white;
+        font-family: time;
+
+
+        
+    }
+    
+
+}
