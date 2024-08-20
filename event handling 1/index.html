@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handling</title>
+</head>
+<body>
+    <form>
+        <input type="radio" id="green" name="fav-language" value="green" >
+        <label for="green">GREEN</label><br>
+        <input type="radio" id="yellow" name="fav-language" value="yellow">
+        <label for="yellow">YELLOW</label><br>
+        <input type="radio" id="red" name="fav-language" value="red">
+        <label for="red">RED</label><br>
+        <input type="radio" id="blue" name="fav-language" value="blue">
+        <label for="blue">BLUE</label><br>
+        <input type="radio" id="pink" name="fav-language" value="pink">
+        <label for="pink">PINK</label><br>
+
+    </form>
+    <hr><br><br>
+    <div class="container">
+        <button><div class="plusbtn" id="plus">+</div></button><br><br>
+         <div class="main1" id="initial_point">0</div><br>
+        <button><div class="minusbtn" id="minus">-</div></button>
+    </div>
+    <hr><br><br>
+
+    <form action="POST" id="second_form">
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="enter first name">
+        </div><br>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="enter last name">
+        </div><br>
+        <div>
+            <label for="psword">Pass Word:</label>
+            <input type="password" id="psword" name="psword" placeholder="password" >
+        </div><br>
+        <div>
+            
+            <input type="submit" id="sub">
+        </div>
+ </form>
+ <div id="div"></div>
+    <script>
+
+
+
+
+
+
+        //The Color Part
+
+        var green = document.getElementById("green");
+        green.onclick = color;
+
+        function color(){
+            document.body.style.backgroundColor= "green";
+        }
+        var yellow = document.getElementById("yellow");
+        yellow.onclick = color1;
+
+        function color1(){
+            document.body.style.backgroundColor= "yellow";
+        }
+        var red = document.getElementById("red");
+        red.onclick = color2;
+
+        function color2(){
+            document.body.style.backgroundColor= "red";
+        } 
+        var blue = document.getElementById("blue");
+        blue.onclick = color3;
+
+        function color3(){
+            document.body.style.backgroundColor= "blue";
+        }
+        var pink = document.getElementById("pink");
+        pink.onclick = color4;
+
+        function color4(){
+            document.body.style.backgroundColor= "pink";
+        }
+        
+
+        // The number inc/dec part
+
+       
+let initial_point= document.getElementById("initial_point")
+let incOne = document.getElementById("plus")
+let decOne = document.getElementById("minus")
+
+
+var currentNumber=parseInt(initial_point.textContent);
+
+incOne.addEventListener('click',function(){
+    var currentNumber=parseInt(initial_point.textContent);
+    initial_point.textContent = currentNumber + 1;
+})
+
+decOne.addEventListener('click',function(){
+    var currentNumber=parseInt(initial_point.textContent);
+    initial_point.textContent = currentNumber - 1;
+})
+
+           //js for second form part
+           
+var form=document.getElementById("second_form")
+var fname=document.getElementById("fname")
+var lname=document.getElementById("lname")
+var psword=document.getElementById("psword")
+var sub=document.getElementById("sub")
+var newer=document.createElement("p")
+
+sub.onclick = done;
+function done(e){
+    e.preventDefault()
+    if( fname.value == 0){
+        fname.style.backgroundColor="pink"
+    }
+    if(lname.value == 0){
+        lname.style.backgroundColor="pink"
+    }
+    if(psword.value == 0){
+        psword.style.backgroundColor="pink"
+    }
+    else{
+        form.style.display="none";
+        newer.innerHTML="form submitted"
+        document.getElementById("div").appendchild(newer)
+    }
+}
+
+    
+
+    </script>
+</body>
+</html>
